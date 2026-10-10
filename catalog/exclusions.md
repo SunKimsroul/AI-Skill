@@ -2,10 +2,10 @@
 
 | Excluded material | Reason |
 | --- | --- |
-| Codex system and plugin-cache skills | Installed vendor/productivity material, not part of the user's exam, pentest, or CTF skill set. |
-| Claude synced and marketplace skills | Installed vendor/productivity material, not part of the focused security library. |
-| `dispatching-parallel-agents` | Generic coordination support, not an exam, pentest, or CTF skill. |
-| `omarchy` and `diagnose-crash` | Desktop/system skills, excluded from the agentic security library. |
+| Codex and Claude built-ins/plugins | Provider and productivity content, not part of the active agentic cyber library. |
+| `omarchy`, `diagnose-crash`, and `terminal-browser` | Desktop, host-system, or browser utilities rather than cyber skills. |
+| `dispatching-parallel-agents` | Generic agent coordination, not an exam, pentest, or CTF workflow. |
+| `ai-pentest-skills` | Broken agentic link: its target folder and `SKILL.md` are currently unavailable. |
 | `cpent-exam/private/` | Private CPENT reports and evidence; source content remains unchanged locally. |
 | Credential-style files and local environment files | Blocked by `.gitignore` to prevent accidental publication. |
 

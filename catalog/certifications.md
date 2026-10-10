@@ -4,11 +4,11 @@ These are navigation tags taken from the retained skills' descriptions. They are
 
 | Certification or exam area | Existing skill folders |
 | --- | --- |
-| CPENT / CPENTv2025 | `opencode/cpent-exam`, `opencode/exam-mode`, `opencode/ctf-exam-report`, `opencode/solve-challenge`, and the CTF specialty skills |
-| OSCP | `opencode/ctf-pentest`, `ctf-pivoting`, `ctf-privesc`, `ctf-ad`, `ctf-web`, `ctf-exam-report`, and `exam-mode` |
-| CPTS | `opencode/ctf-pentest`, `ctf-pivoting`, `ctf-privesc`, `ctf-ad`, `ctf-web`, `ctf-forensics`, and `exam-mode` |
-| CRTP / CRTE | `opencode/ctf-ad`, `ctf-pivoting`, `ctf-privesc`, `ctf-redteam`, `ctf-exam-report`, and `exam-mode` |
-| CRTO / CRTL / CRTeamer | `opencode/ctf-redteam`, `ctf-pentest`, `ctf-ad`, `ctf-pivoting`, and `ctf-exam-report` |
-| OSED-style exploit development | `opencode/ctf-pwn`, `ctf-reverse`, and `ctf-crypto` where applicable |
-| OSWP | `opencode/ctf-wireless` |
-| ARTE / AZRTE / CARTP | `opencode/ctf-cloud`, `ctf-ad`, and `ctf-pentest` |
+| CPENT / CPENTv2025 | `agentic-cyber/cpent-exam`, `agentic-cyber/exam-mode`, `agentic-cyber/ctf-exam-report`, `agentic-cyber/solve-challenge`, and the CTF specialty skills |
+| OSCP | `agentic-cyber/ctf-pentest`, `ctf-pivoting`, `ctf-privesc`, `ctf-ad`, `ctf-web`, `ctf-exam-report`, and `exam-mode` |
+| CPTS | `agentic-cyber/ctf-pentest`, `ctf-pivoting`, `ctf-privesc`, `ctf-ad`, `ctf-web`, `ctf-forensics`, and `exam-mode` |
+| CRTP / CRTE | `agentic-cyber/ctf-ad`, `ctf-pivoting`, `ctf-privesc`, `ctf-redteam`, `ctf-exam-report`, and `exam-mode` |
+| CRTO / CRTL / CRTeamer | `agentic-cyber/ctf-redteam`, `ctf-pentest`, `ctf-ad`, `ctf-pivoting`, and `ctf-exam-report` |
+| OSED-style exploit development | `agentic-cyber/ctf-pwn`, `ctf-reverse`, and `ctf-crypto` where applicable |
+| OSWP | `agentic-cyber/ctf-wireless` |
+| ARTE / AZRTE / CARTP | `agentic-cyber/ctf-cloud`, `ctf-ad`, and `ctf-pentest` |

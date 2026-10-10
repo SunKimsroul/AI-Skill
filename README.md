@@ -1,26 +1,19 @@
 # AI-Skill
 
-A backup of the existing agentic security skills currently used for certification exams, pentests, and CTFs.
+A backup of the 28 existing agentic cyber skills currently used for certification exams, pentests, and CTFs.
 
-No new skills were created. The repository contains only the existing security workflows, with their original files preserved.
+This is not a mirror of local desktop/browser skills or general Codex/Claude provider plugins. No new skills were created; the original cyber workflows are preserved as-is.
 
-## Included
-
-| Source | Skill folders |
-| --- | ---: |
-| OpenCode security library | 27 |
-| Shared agent security skill | 1 |
-| **Total** | **28** |
+## Layout
 
 ```text
 skills/
-  opencode/      # existing exam, pentest, CTF, and research skills
-  shared-agent/  # existing maldev-academy skill
+  agentic-cyber/  # existing exam, pentest, CTF, and security-research skills
 catalog/
   categories.md       # category navigation without duplicated skills
   certifications.md   # certification/exam routing
   skill-index.tsv     # one row per existing skill
-  exclusions.md       # deliberately omitted content
+  exclusions.md       # deliberately omitted material
 ```
 
 See [the catalog](catalog/README.md) to browse by category or certification.

@@ -1,46 +1,46 @@
 # Categories
 
-These are pointers to the canonical existing folders under `skills/`; no skills are duplicated or generated.
+These are pointers to the canonical existing folders under `skills/agentic-cyber/`; no skills are duplicated or generated.
 
 ## Certification and exam
 
-- `opencode/cpent-exam`
-- `opencode/exam-mode`
-- `opencode/ctf-exam-report`
+- `agentic-cyber/cpent-exam`
+- `agentic-cyber/exam-mode`
+- `agentic-cyber/ctf-exam-report`
 
 ## Pentest and red-team
 
-- `opencode/ctf-ad`
-- `opencode/ctf-cloud`
-- `opencode/ctf-pentest`
-- `opencode/ctf-pivoting`
-- `opencode/ctf-privesc`
-- `opencode/ctf-redteam`
-- `opencode/ctf-wireless`
-- `shared-agent/maldev-academy`
+- `agentic-cyber/ctf-ad`
+- `agentic-cyber/ctf-cloud`
+- `agentic-cyber/ctf-pentest`
+- `agentic-cyber/ctf-pivoting`
+- `agentic-cyber/ctf-privesc`
+- `agentic-cyber/ctf-redteam`
+- `agentic-cyber/ctf-wireless`
+- `agentic-cyber/maldev-academy`
 
 ## CTF specialties
 
-- `opencode/ctf-ai-ml`
-- `opencode/ctf-crypto`
-- `opencode/ctf-forensics`
-- `opencode/ctf-malware`
-- `opencode/ctf-misc`
-- `opencode/ctf-osint`
-- `opencode/ctf-pwn`
-- `opencode/ctf-reverse`
-- `opencode/ctf-web`
+- `agentic-cyber/ctf-ai-ml`
+- `agentic-cyber/ctf-crypto`
+- `agentic-cyber/ctf-forensics`
+- `agentic-cyber/ctf-malware`
+- `agentic-cyber/ctf-misc`
+- `agentic-cyber/ctf-osint`
+- `agentic-cyber/ctf-pwn`
+- `agentic-cyber/ctf-reverse`
+- `agentic-cyber/ctf-web`
 
 ## Security research
 
-- `opencode/research-mode`
-- `opencode/src-review`
-- `opencode/vuln-loop`
+- `agentic-cyber/research-mode`
+- `agentic-cyber/src-review`
+- `agentic-cyber/vuln-loop`
 
 ## CTF workflow and reporting
 
-- `opencode/compact`
-- `opencode/ctf-writeup`
-- `opencode/f0undm3-ctf-operations`
-- `opencode/loophole`
-- `opencode/solve-challenge`
+- `agentic-cyber/compact`
+- `agentic-cyber/ctf-writeup`
+- `agentic-cyber/f0undm3-ctf-operations`
+- `agentic-cyber/loophole`
+- `agentic-cyber/solve-challenge`
