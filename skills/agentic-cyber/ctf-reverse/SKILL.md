@@ -197,3 +197,8 @@ Use [field-notes.md](field-notes.md) after the first round of triage when you kn
 - Technique notes: anti-debug bypass, VM analysis, x86-64 gotchas, iterative solvers, Unicorn, timing side channels
 - Platform notes: Godot, Roblox, macOS/iOS, embedded firmware, kernel drivers, game engines, Swift, Kotlin, Go, Rust, D
 - Case notes: modern CTF-specific reversing patterns and older classic challenge patterns
+- Case notes: modern CTF-specific reversing patterns and older classic challenge patterns
+
+## Coverage-first gate
+
+For a new authorized target, load [`coverage-first`](../coverage-first/SKILL.md) before exploitation and keep its coverage ledger through every pivot. Apply the relevant checks for this specialty; record any skipped or blocked surface rather than assuming it is absent.

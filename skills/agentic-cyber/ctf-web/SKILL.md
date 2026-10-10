@@ -1,6 +1,6 @@
 ---
 name: ctf-web
-description: Find and exploit web application flaws: auth, injection, SSRF, XSS, deserialization, file handling, and APIs. For CTFs, exam labs, bug bounty, and pentests.
+description: "Find and exploit web application flaws: auth, injection, SSRF, XSS, deserialization, file handling, and APIs. For CTFs, exam labs, bug bounty, and pentests."
 ---
 
 
@@ -191,3 +191,8 @@ Use [field-notes.md](field-notes.md) once you have confirmed the challenge is tr
 - Database: tables named `flag`, `flags`, `secret`, or seeded challenge content
 - HTTP: custom headers, archived responses, hidden routes, admin exports
 - Browser: hidden DOM nodes, `data-*` attributes, inline state objects, source maps
+- Browser: hidden DOM nodes, `data-*` attributes, inline state objects, source maps
+
+## Coverage-first gate
+
+For a new authorized target, load [`coverage-first`](../coverage-first/SKILL.md) before exploitation and keep its coverage ledger through every pivot. Apply the relevant checks for this specialty; record any skipped or blocked surface rather than assuming it is absent.

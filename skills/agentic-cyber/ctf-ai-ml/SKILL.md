@@ -1,6 +1,6 @@
 ---
 name: ctf-ai-ml
-description: Test AI, ML, LLM, and agent/MCP systems: prompt injection, tool poisoning, adversarial inputs, and model attacks. For CTFs, exam labs, bug bounty, and security research.
+description: "Test AI, ML, LLM, and agent/MCP systems: prompt injection, tool poisoning, adversarial inputs, and model attacks. For CTFs, exam labs, bug bounty, and security research."
 ---
 
 
@@ -128,3 +128,8 @@ print(f'Shape: {img.shape}, Range: [{img.min():.3f}, {img.max():.3f}]')
 
 - **Gradient-based input recovery:** Using model gradients to reconstruct private training data from shared gradients (federated learning attacks). See [model-attacks.md](model-attacks.md#ml-model-inversion-via-gradient-descent-bsidessf-2025).
 - **Activation maximization:** Optimizing input to maximize a specific neuron's activation, revealing what the network has learned.
+- **Activation maximization:** Optimizing input to maximize a specific neuron's activation, revealing what the network has learned.
+
+## Coverage-first gate
+
+For a new authorized target, load [`coverage-first`](../coverage-first/SKILL.md) before exploitation and keep its coverage ledger through every pivot. Apply the relevant checks for this specialty; record any skipped or blocked surface rather than assuming it is absent.

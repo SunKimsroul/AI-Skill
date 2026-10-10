@@ -1,6 +1,6 @@
 ---
 name: loophole
-description: The CTF learning loop — two directions. WRITE side: after solving (or decisively failing) any CTF challenge, exam lab, or pentest finding, distill new techniques, commands, and pitfalls back into the ctf-* skill library. READ side: at challenge start, warm up by retrieving prior lessons for the category. Triggers: "learn from this", "loophole", "/learn", flag captured, or starting a challenge in a known category.
+description: "The CTF learning loop — two directions. WRITE side: after solving (or decisively failing) any CTF challenge, exam lab, or pentest finding, distill new techniques, commands, and pitfalls back into the ctf-* skill library. READ side: at challenge start, warm up by retrieving prior lessons for the category. Triggers: \"learn from this\", \"loophole\", \"/learn\", flag captured, or starting a challenge in a known category."
 ---
 
 # Loophole — the CTF learning loop
@@ -140,3 +140,8 @@ the loop is not firing — fix the wiring, not the library.
 4. Do not delete or rewrite existing entries unless they are provably wrong.
 5. WRITE side runs even on instructive failures — a documented dead end saves
    the next agent an hour.
+   the next agent an hour.
+
+## Coverage learning
+
+When recording a lesson, include the coverage gap or pivot that revealed it; update the [`coverage-first`](../coverage-first/SKILL.md) ledger before treating a failure as final.

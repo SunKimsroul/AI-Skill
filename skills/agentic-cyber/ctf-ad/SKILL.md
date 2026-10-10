@@ -1,6 +1,6 @@
 ---
 name: ctf-ad
-description: Attack Active Directory and hybrid Entra ID: enumeration, Kerberos (roasting, delegation, RBCD), AD CS/ESC, NTLM relay, ACL abuse, lateral movement, DCSync, trusts. For CTFs, exam labs, and pentests.
+description: "Attack Active Directory and hybrid Entra ID: enumeration, Kerberos (roasting, delegation, RBCD), AD CS/ESC, NTLM relay, ACL abuse, lateral movement, DCSync, trusts. For CTFs, exam labs, and pentests."
 ---
 
 
@@ -86,3 +86,8 @@ A domain is a graph you cannot see until you enumerate it, and no two are config
 - Cracking a captured hash or breaking a custom crypto primitive → `ctf-crypto`.
 - Recovering artifacts from a disk/memory image or packet capture → `ctf-forensics`.
 - Documenting the result → `ctf-writeup` and the F0undM3 report standard.
+- Documenting the result → `ctf-writeup` and the F0undM3 report standard.
+
+## Coverage-first gate
+
+For a new authorized target, load [`coverage-first`](../coverage-first/SKILL.md) before exploitation and keep its coverage ledger through every pivot. Apply the relevant checks for this specialty; record any skipped or blocked surface rather than assuming it is absent.

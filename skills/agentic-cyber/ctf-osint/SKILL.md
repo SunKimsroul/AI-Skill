@@ -1,6 +1,6 @@
 ---
 name: ctf-osint
-description: Corroborated open-source research: geolocation, media, social, web, and DNS evidence. For CTFs, recon during authorized engagements, and threat intelligence.
+description: "Corroborated open-source research: geolocation, media, social, web, and DNS evidence. For CTFs, recon during authorized engagements, and threat intelligence."
 ---
 
 
@@ -202,3 +202,8 @@ Lookup usernames across gaming platforms (Steam, Xbox, PSN, MMOs) for character 
 - **VirusTotal** - File/URL reputation
 - **WHOIS** - Domain registration
 - **Wayback Machine** - Historical snapshots
+- **Wayback Machine** - Historical snapshots
+
+## Coverage-first gate
+
+For a new authorized target, load [`coverage-first`](../coverage-first/SKILL.md) before exploitation and keep its coverage ledger through every pivot. Apply the relevant checks for this specialty; record any skipped or blocked surface rather than assuming it is absent.

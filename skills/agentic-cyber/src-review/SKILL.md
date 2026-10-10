@@ -98,3 +98,8 @@ Severity honest: local-file-read via file upload processing is usually High, not
 - `escapeshellarg` present at call site but the *argument construction* above it builds the command.
 - One caller left unpatched after a class-wide fix.
 - Version checks guarding deprecated functions where the "safe" fallback branch is the weak one.
+- Version checks guarding deprecated functions where the "safe" fallback branch is the weak one.
+
+## Coverage-first gate
+
+For a new authorized target, load [`coverage-first`](../coverage-first/SKILL.md) before exploitation and keep its coverage ledger through every pivot. Apply the relevant checks for this specialty; record any skipped or blocked surface rather than assuming it is absent.

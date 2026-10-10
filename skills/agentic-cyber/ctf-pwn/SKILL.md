@@ -1,6 +1,6 @@
 ---
 name: ctf-pwn
-description: Exploit memory-corruption bugs once understood: overflows, ROP, heap, shellcode, kernel, and sandbox escapes. For CTFs, OSED-style labs, and exploit development.
+description: "Exploit memory-corruption bugs once understood: overflows, ROP, heap, shellcode, kernel, and sandbox escapes. For CTFs, OSED-style labs, and exploit development."
 ---
 
 
@@ -230,3 +230,8 @@ Use [field-notes.md](field-notes.md) once you have confirmed the challenge is tr
 - Sandbox and hybrid notes: pyjail crossover, busybox escapes, custom VMs, shell tricks, path sanitizers
 - Kernel and Windows notes: kernel playbooks, SEH, CFG bypass, privilege escalation
 - Historical case notes: older but still reusable CTF exploit patterns
+- Historical case notes: older but still reusable CTF exploit patterns
+
+## Coverage-first gate
+
+For a new authorized target, load [`coverage-first`](../coverage-first/SKILL.md) before exploitation and keep its coverage ledger through every pivot. Apply the relevant checks for this specialty; record any skipped or blocked surface rather than assuming it is absent.

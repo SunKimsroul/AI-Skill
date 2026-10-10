@@ -1,6 +1,6 @@
 ---
 name: ctf-cloud
-description: Attack AWS and Azure/Entra: IAM/RBAC privesc, managed-identity and metadata credential theft, compute-service RCE, secret extraction, and unauth entry. For ARTE/AZRTE/CARTP and cloud pentests.
+description: "Attack AWS and Azure/Entra: IAM/RBAC privesc, managed-identity and metadata credential theft, compute-service RCE, secret extraction, and unauth entry. For ARTE/AZRTE/CARTP and cloud pentests."
 ---
 
 
@@ -80,3 +80,8 @@ pip install pacu            # AWS exploitation framework
 pip install roadrecon       # Entra/Azure AD recon
 # AADInternals (PowerShell), MicroBurst (PowerShell), AzureHound for graph paths
 ```
+```
+
+## Coverage-first gate
+
+For a new authorized target, load [`coverage-first`](../coverage-first/SKILL.md) before exploitation and keep its coverage ledger through every pivot. Apply the relevant checks for this specialty; record any skipped or blocked surface rather than assuming it is absent.

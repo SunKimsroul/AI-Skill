@@ -1,6 +1,6 @@
 ---
 name: ctf-wireless
-description: Attack corporate Wi-Fi end to end: WPA2/WPA3/enterprise breaks, WPS, evil twins, rogue-AP/karma, WEP, then pivot onto the internal VLAN to AD domain compromise. For OSWP and Wi-Fi pentests.
+description: "Attack corporate Wi-Fi end to end: WPA2/WPA3/enterprise breaks, WPS, evil twins, rogue-AP/karma, WEP, then pivot onto the internal VLAN to AD domain compromise. For OSWP and Wi-Fi pentests."
 ---
 
 
@@ -155,3 +155,8 @@ sudo aireplay-ng -9 wlan0mon    # MUST print "Injection is working!" — else ch
 Same steps regardless of distro; Kali just ships more of them preinstalled. The hardware
 requirement is unchanged — an injection-capable adapter (and USB passthrough if Linux runs
 in a VM). See `rig-and-adapters.md`.
+in a VM). See `rig-and-adapters.md`.
+
+## Coverage-first gate
+
+For a new authorized target, load [`coverage-first`](../coverage-first/SKILL.md) before exploitation and keep its coverage ledger through every pivot. Apply the relevant checks for this specialty; record any skipped or blocked surface rather than assuming it is absent.

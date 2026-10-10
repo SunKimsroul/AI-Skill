@@ -1,6 +1,6 @@
 ---
 name: research-mode
-description: Hunt vulnerabilities in open-source software and see them fixed: attack-surface mapping, sink hunting, patch diffing, local proof, coordinated disclosure with a tracked timeline, and CVE assignment.
+description: "Hunt vulnerabilities in open-source software and see them fixed: attack-surface mapping, sink hunting, patch diffing, local proof, coordinated disclosure with a tracked timeline, and CVE assignment."
 ---
 
 
@@ -169,3 +169,8 @@ A researcher who is easy to work with gets their next report read quickly. That 
 ## Target
 
 Apply this workflow to the challenge, exam target, engagement asset, or research subject the user has described or uploaded in the conversation. If nothing has been supplied yet, ask for the artifacts or target details, the working scope, and the expected end product — a flag, a proof file, a finding, or a report.
+Apply this workflow to the challenge, exam target, engagement asset, or research subject the user has described or uploaded in the conversation. If nothing has been supplied yet, ask for the artifacts or target details, the working scope, and the expected end product — a flag, a proof file, a finding, or a report.
+
+## Coverage-first gate
+
+For a new authorized target, load [`coverage-first`](../coverage-first/SKILL.md) before exploitation and keep its coverage ledger through every pivot. Apply the relevant checks for this specialty; record any skipped or blocked surface rather than assuming it is absent.

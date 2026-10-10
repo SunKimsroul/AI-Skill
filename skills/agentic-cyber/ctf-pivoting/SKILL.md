@@ -1,6 +1,6 @@
 ---
 name: ctf-pivoting
-description: Reach internal networks through a compromised host: SSH/chisel/ligolo-ng tunneling, port forwarding, SOCKS proxies, multi-hop pivots. For CPTS, CRTE, OSCP labs, pentests, and multi-host CTF.
+description: "Reach internal networks through a compromised host: SSH/chisel/ligolo-ng tunneling, port forwarding, SOCKS proxies, multi-hop pivots. For CPTS, CRTE, OSCP labs, pentests, and multi-host CTF."
 ---
 
 
@@ -51,3 +51,8 @@ Get the direction right before anything else: decide what needs to reach what, t
 
 - AD-native movement once you're on the internal net (PsExec/WMI/PtH, Kerberos through the proxy) → `ctf-ad/lateral-movement.md` and `ctf-ad/kerberos.md`.
 - Escalating on the pivot host to enable a forward you can't otherwise set up → `ctf-privesc/`.
+- Escalating on the pivot host to enable a forward you can't otherwise set up → `ctf-privesc/`.
+
+## Coverage-first gate
+
+For a new authorized target, load [`coverage-first`](../coverage-first/SKILL.md) before exploitation and keep its coverage ledger through every pivot. Apply the relevant checks for this specialty; record any skipped or blocked surface rather than assuming it is absent.

@@ -264,3 +264,8 @@ Before finalizing the writeup, verify:
 ## Challenge
 
 Apply this workflow to the challenge, exam target, engagement asset, or research subject the user has described or uploaded in the conversation. If nothing has been supplied yet, ask for the artifacts or target details, the working scope, and the expected end product — a flag, a proof file, a finding, or a report.
+Apply this workflow to the challenge, exam target, engagement asset, or research subject the user has described or uploaded in the conversation. If nothing has been supplied yet, ask for the artifacts or target details, the working scope, and the expected end product — a flag, a proof file, a finding, or a report.
+
+## Coverage audit
+
+When documenting a solved challenge or assessment, use the [`coverage-first`](../coverage-first/SKILL.md) ledger to identify untested high-value surfaces. Do not claim full coverage where a row is blocked, out of scope, or untested.

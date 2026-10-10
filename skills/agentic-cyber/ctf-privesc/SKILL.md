@@ -1,6 +1,6 @@
 ---
 name: ctf-privesc
-description: Escalate to root/SYSTEM/Administrator: Linux sudo/SUID/capabilities/cron/kernel and Windows tokens (SeImpersonate/Potato), services, UAC, credential hunting. For OSCP, CPTS, CRTP labs and pentests.
+description: "Escalate to root/SYSTEM/Administrator: Linux sudo/SUID/capabilities/cron/kernel and Windows tokens (SeImpersonate/Potato), services, UAC, credential hunting. For OSCP, CPTS, CRTP labs and pentests."
 ---
 
 
@@ -54,3 +54,8 @@ Privilege escalation is an enumeration problem first and an exploitation problem
 - Reaching hosts on an internal segment → `ctf-pivoting/`.
 - The escalation is really a memory-corruption exploit in a local SUID/service binary → `ctf-pwn`.
 - A local service is a web app on localhost → `ctf-web`.
+- A local service is a web app on localhost → `ctf-web`.
+
+## Coverage-first gate
+
+For a new authorized target, load [`coverage-first`](../coverage-first/SKILL.md) before exploitation and keep its coverage ledger through every pivot. Apply the relevant checks for this specialty; record any skipped or blocked surface rather than assuming it is absent.

@@ -1,6 +1,6 @@
 ---
 name: f0undm3-ctf-operations
-description: Coordinate offensive-security work end to end: triage, pwn, reverse, web, crypto, forensics, OSINT, scoped engagements, team handoffs, and publication-style F0undM3/numpav writeups and reports.
+description: "Coordinate offensive-security work end to end: triage, pwn, reverse, web, crypto, forensics, OSINT, scoped engagements, team handoffs, and publication-style F0undM3/numpav writeups and reports."
 ---
 
 
@@ -67,3 +67,8 @@ Establish the scope before acting: named targets, expiry or exam window, and per
 Use an academic but readable narrative: abstract, target condition, evidence-led discovery, rejected paths, exploit or finding chain, reproduction, and conclusion. Default metadata is **F0undM3** and **numpav**. Read `references/writeup-standard.md` before drafting.
 
 When a polished report is requested, render the completed Markdown with `scripts/render_academic_writeup.py` (requires `reportlab`; install it first if the environment lacks it). Use the bundled OmniCTF publication reference for visual direction: formal title and author block, abstract and keywords, dense two-column evidence-led analysis, compact code and tables, a reference solver appendix, and restrained page numbering. The renderer adds a restrained syntax palette to code: blue keywords, purple strings, red numbers, and green comments. Preserve the report's own content; copy the reference's presentation standard rather than its wording. Visually inspect the rendered pages before delivery.
+When a polished report is requested, render the completed Markdown with `scripts/render_academic_writeup.py` (requires `reportlab`; install it first if the environment lacks it). Use the bundled OmniCTF publication reference for visual direction: formal title and author block, abstract and keywords, dense two-column evidence-led analysis, compact code and tables, a reference solver appendix, and restrained page numbering. The renderer adds a restrained syntax palette to code: blue keywords, purple strings, red numbers, and green comments. Preserve the report's own content; copy the reference's presentation standard rather than its wording. Visually inspect the rendered pages before delivery.
+
+## Coverage-first gate
+
+For a new authorized target, load [`coverage-first`](../coverage-first/SKILL.md) before exploitation and keep its coverage ledger through every pivot. Apply the relevant checks for this specialty; record any skipped or blocked surface rather than assuming it is absent.

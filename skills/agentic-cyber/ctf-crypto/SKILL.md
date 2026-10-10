@@ -1,6 +1,6 @@
 ---
 name: ctf-crypto
-description: Attack cryptographic implementations and protocols: classical ciphers, RSA, ECC, PRNGs, lattices, and protocol flaws. For CTFs, exam labs, and applied crypto research.
+description: "Attack cryptographic implementations and protocols: classical ciphers, RSA, ECC, PRNGs, lattices, and protocol flaws. For CTFs, exam labs, and applied crypto research."
 ---
 
 
@@ -362,3 +362,8 @@ Divide-and-conquer SPN key recovery: attack each S-box position independently, i
 - **SageMath:** `sage -python script.py` (required for ECC, Coppersmith, lattice attacks)
 - **RsaCtfTool:** `python RsaCtfTool.py -n <n> -e <e> --uncipher <c>` — automated RSA attack suite (tries Wiener, Hastad, Fermat, Pollard, and many more)
 - **quipqiup.com:** Automated substitution cipher solver (frequency + word pattern analysis)
+- **quipqiup.com:** Automated substitution cipher solver (frequency + word pattern analysis)
+
+## Coverage-first gate
+
+For a new authorized target, load [`coverage-first`](../coverage-first/SKILL.md) before exploitation and keep its coverage ledger through every pivot. Apply the relevant checks for this specialty; record any skipped or blocked surface rather than assuming it is absent.

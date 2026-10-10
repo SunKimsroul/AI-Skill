@@ -112,3 +112,8 @@ python <skill-directory>/scripts/validate_report.py path/to/report.md --strict -
 ```
 
 Resolve `<skill-directory>` to this skill's installed folder; do not assume the current directory is the skill root. Use `--require-images` when screenshots are requested or required, and omit it only when the verified report contract does not require images. Resolve all errors. Review warnings manually because official formats vary. A strict failure caused by an intentional limitation is not waived silently: retain the limitation, state that the report is not submission-ready, and identify the authoritative decision needed. Report what was verified, what was not re-executed, and any remaining evidence gaps.
+Resolve `<skill-directory>` to this skill's installed folder; do not assume the current directory is the skill root. Use `--require-images` when screenshots are requested or required, and omit it only when the verified report contract does not require images. Resolve all errors. Review warnings manually because official formats vary. A strict failure caused by an intentional limitation is not waived silently: retain the limitation, state that the report is not submission-ready, and identify the authoritative decision needed. Report what was verified, what was not re-executed, and any remaining evidence gaps.
+
+## Coverage audit
+
+When documenting a solved challenge or assessment, use the [`coverage-first`](../coverage-first/SKILL.md) ledger to identify untested high-value surfaces. Do not claim full coverage where a row is blocked, out of scope, or untested.

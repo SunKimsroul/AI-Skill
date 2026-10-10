@@ -1,6 +1,6 @@
 ---
 name: vuln-loop
-description: Non-stop CVE-hunt loop for popular repos (>=50k stars) with a security intake channel. Use when the user says "keep hunting", "loop", "don't stop", "auto-loop", "hunt CVEs", or when an AUTO-LOOP continuation prompt arrives. Defines target selection, the 3x clean-env live validation rule, CVE submission packaging, logging, and stop conditions.
+description: "Non-stop CVE-hunt loop for popular repositories with 50k or more stars and a security intake channel. Use when the user says \"keep hunting\", \"loop\", \"don't stop\", \"auto-loop\", \"hunt CVEs\", or when an AUTO-LOOP continuation prompt arrives. Defines target selection, the 3x clean-env live validation rule, CVE submission packaging, logging, and stop conditions."
 ---
 
 # Vuln loop protocol
@@ -75,3 +75,8 @@ Create `~/CVE-hunt/<year>-<project>-<slug>/` with:
 After a finding is packaged and logged, DO NOT stop: move to the next repo /
 next vulnerability and repeat. Stop only on `~/CVE-hunt/STOP` or the
 AUTO-LOOP max-iteration cap.
+AUTO-LOOP max-iteration cap.
+
+## Coverage-first gate
+
+For a new authorized target, load [`coverage-first`](../coverage-first/SKILL.md) before exploitation and keep its coverage ledger through every pivot. Apply the relevant checks for this specialty; record any skipped or blocked surface rather than assuming it is absent.

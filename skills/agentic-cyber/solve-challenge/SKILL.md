@@ -375,3 +375,8 @@ solved challenge must make the next one faster — that is the point of the libr
 ## Challenge
 
 Apply this workflow to the challenge, exam target, engagement asset, or research subject the user has described or uploaded in the conversation. If nothing has been supplied yet, ask for the artifacts or target details, the working scope, and the expected end product — a flag, a proof file, a finding, or a report.
+Apply this workflow to the challenge, exam target, engagement asset, or research subject the user has described or uploaded in the conversation. If nothing has been supplied yet, ask for the artifacts or target details, the working scope, and the expected end product — a flag, a proof file, a finding, or a report.
+
+## Coverage-first gate
+
+For a new authorized target, load [`coverage-first`](../coverage-first/SKILL.md) before exploitation and keep its coverage ledger through every pivot. Apply the relevant checks for this specialty; record any skipped or blocked surface rather than assuming it is absent.

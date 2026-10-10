@@ -1,6 +1,6 @@
 ---
 name: ctf-redteam
-description: Authorized red-team ops: C2 infra, initial access/phishing, payload delivery, EDR-evasion concepts, lateral movement, persistence, OPSEC, ATT&CK, reporting. For CRTeamer/CRTO/CRTL/CRTP/CRTE prep.
+description: "Authorized red-team ops: C2 infra, initial access/phishing, payload delivery, EDR-evasion concepts, lateral movement, persistence, OPSEC, ATT&CK, reporting. For CRTeamer/CRTO/CRTL/CRTP/CRTE prep."
 ---
 
 
@@ -79,3 +79,8 @@ A red-team plan survives contact with the target only as long as the first real 
 - Domain attack detail (Kerberos, AD CS, ACLs, DCSync, trusts) → `ctf-ad`.
 - Local privilege escalation → `ctf-privesc`. Tunneling to internal segments → `ctf-pivoting`.
 - The initial access is a web-app exploit → `ctf-web`. A binary/implant needs reversing → `ctf-reverse`.
+- The initial access is a web-app exploit → `ctf-web`. A binary/implant needs reversing → `ctf-reverse`.
+
+## Coverage-first gate
+
+For a new authorized target, load [`coverage-first`](../coverage-first/SKILL.md) before exploitation and keep its coverage ledger through every pivot. Apply the relevant checks for this specialty; record any skipped or blocked surface rather than assuming it is absent.

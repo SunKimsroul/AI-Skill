@@ -214,3 +214,8 @@ output + figure number, captured as you go.
 | Crypto/encoding puzzles | `ctf-crypto` |
 | Forensic artifacts (pcap/disk/memory) | `ctf-forensics` |
 | Suspicious binary behavior analysis | `ctf-malware` |
+| Suspicious binary behavior analysis | `ctf-malware` |
+
+## Coverage-first gate
+
+For a new authorized target, load [`coverage-first`](../coverage-first/SKILL.md) before exploitation and keep its coverage ledger through every pivot. Apply the relevant checks for this specialty; record any skipped or blocked surface rather than assuming it is absent.
