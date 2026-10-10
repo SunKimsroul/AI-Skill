@@ -1,0 +1,4 @@
+interface:
+  display_name: "F0undM3 CTF Operations"
+  short_description: "Evidence-led CTF and pentest workflows"
+  default_prompt: "Use $f0undm3-ctf-operations to plan and document this challenge."

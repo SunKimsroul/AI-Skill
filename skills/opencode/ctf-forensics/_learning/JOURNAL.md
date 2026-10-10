@@ -1,0 +1,1 @@
+- 2026-09-19 SCC SQ_NOTICE9 (forensics 450): ESC/P emphasis runs = XOR key; roster cut-authorory selects stencil mask; notch-up/notch-right = 90-deg CW rotation before overlay. Solved offline, byte-exact.

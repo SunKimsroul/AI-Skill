@@ -1,0 +1,1 @@
+- 2026-09-19 SCC P_SEED (agentic 550): indirect injection via shared note queue. Read KB first — the doc IS the attack grammar: title prefix -> classification, body header -> routing, ACTION: line -> executed by unattended sweep (operator scope) but only logged by attended desk. Wrong scope name gave an in-log error revealing literal path form needed.

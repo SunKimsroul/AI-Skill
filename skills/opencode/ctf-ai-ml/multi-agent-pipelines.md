@@ -1,0 +1,17 @@
+# AI/ML - Multi-agent pipeline and orchestration attacks
+
+## Inter-agent message forgery and stage skipping
+
+**Trigger:** The system has more than one agent — a router/planner that hands work to workers, a "second stage", an escalation reviewer — and you can see the hand-off in traffic or in the job state machine.
+
+Map every agent as its own endpoint before attacking any of them, because the hand-off is usually where the trust is. First test whether the downstream agent is reachable directly: if the worker endpoint answers your request without the upstream agent in the path, every constraint the upstream applied is optional and the whole front-end guardrail becomes irrelevant. Where it is not directly reachable, identify which fields the downstream consumes and whether it re-validates them or trusts them because an internal peer set them — requester identity, approval flags, target scope, and privilege level are the ones worth forging. If the hand-off is wrapped in encryption or signing, recover the scheme from the upstream agent rather than attacking the crypto: the algorithm, key, and plaintext schema are usually reachable through the same disclosure primitives you already used for the system prompt, and once you hold a symmetric key you can build the plaintext locally, wrap it, and submit a message the downstream believes came from its peer. When the hand-off is synchronous and keyed to a predictable sequential job identifier, there is a window between the upstream writing the record and the downstream reading it — see `ctf-web/race-conditions.md` for the mechanics of hitting it. Override directives on the internal channel tend to be pattern-recognised by a model rather than compared exactly, so a directive of the right shape usually passes.
+
+Source: https://offsecexams.com/cheatsheets/agentic-ai-pentester-c-agaipen-exam---guided-by-redblock
+
+## Downstream stage guardrail asymmetry
+
+**Trigger:** Submitted work moves through visible states (pending, processing, analysed, escalated, processed), or a later "final analysis" / "review" / "summariser" stage sees your content again with more context than the intake stage had.
+
+Guardrails in agentic pipelines are almost always concentrated at intake, because that is the boundary the designers pictured a user attacking. Later stages then process the same content with weaker filtering, a cheaper model, broader tool access, and — critically — the belief that whatever reached them was already sanitised by an internal peer. So stop trying to make the front door accept a payload and instead make it accept something the front door considers harmless but a later stage will read as an instruction. Watch the state machine for how many times your content is re-processed and by whom; each transition is a fresh injection opportunity against a different model with different rules. Escalation and final-review stages are the highest-value targets because they aggregate context from multiple submissions and typically hold the credentials or tools the intake agent lacks. Time the payload to the stage: instructions that only make sense during summarisation or review will be ignored by intake and fire where you want them. Confirm by watching which stage's output changes, not by whether the intake agent complains — a payload that draws no reaction at intake and lands three transitions later is the intended path, not a failure.
+
+Source: https://offsecexams.com/cheatsheets/agentic-ai-pentester-c-agaipen-exam---guided-by-redblock

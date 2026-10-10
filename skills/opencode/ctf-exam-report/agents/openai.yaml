@@ -1,0 +1,7 @@
+interface:
+  display_name: "CTF Exam Report"
+  short_description: "Build evidence-first, reproducible CTF reports"
+  default_prompt: "Use $ctf-exam-report to turn my authorized CTF notes, commands, logs, and screenshots into a reproducible Markdown exam report."
+
+policy:
+  allow_implicit_invocation: true
